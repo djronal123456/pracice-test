@@ -16,6 +16,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>2.5.3</version>
+        </dependency>
+
     </dependencies>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -25,7 +31,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>PetClinicLab4Application</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>PetClinicLab4Application</name>
     <description>PetClinicLab4Application</description>
     <properties>
@@ -46,7 +52,17 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
-
+    <scm>
+        <developerConnection>scm:git:https://github.com/djronal123456/pracice-test.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 </project>

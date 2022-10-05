@@ -30,7 +30,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>PetClinicLab4Application</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>PetClinicLab4Application</name>
     <description>PetClinicLab4Application</description>
     <properties>
@@ -62,6 +62,6 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/djronal123456/pracice-test.git</developerConnection>
-        <tag>PetClinicLab4Application-0.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
 </project>
